@@ -63,7 +63,7 @@
 
 }
 .mySkills {
-	;
+	font-style: normal;
   }
   
   
@@ -127,5 +127,5 @@
 	  grid-template-areas: 
 		"workItem1 workItem1"
 		"workItem2 workItem2"
-		"work
-  
+	}
+}
