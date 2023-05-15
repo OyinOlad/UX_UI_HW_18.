@@ -103,19 +103,23 @@
 	}
   }
   /* My work section*/
-  .myWork {
-	/* add your styles here */
+  /* My Work Section Constructed using CSS Grid */
+.myWork {
+	align-items: center;
   }
   
   .workGrid {
 	display: grid;
-	row-gap: 50px
-
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: auto auto;
 	grid-template-rows: auto;
-	grid-template-areas: 
-	  "workItem1 workItem2"
-	  "workItem3 workItem4";
+	grid-template-areas:
+	  "workItem1"
+	  "workItem2"
+	  "workItem3";
+	gap: 20px; 
+	background-color: beige;
+	align-items: center;
+	justify-content: center;
   }
   
   .workItem1 {
@@ -130,12 +134,31 @@
 	grid-area: workItem3;
   }
   
+  .workItem1, .workItem2, .workItem3 {
+	display:inline-flex;
+	flex-direction:
+	align-items:flex-en
+	text-align: center;
+	padding: 20px;
+	background-color: #f2f2f2;
+ 
+  }
   
+  .workItem1 img,
+  .workItem2 img,
+  .workItem3 img {
+	width: 100%; /* adjust the image size as per your design */
+	height: auto;
+	margin-bottom: 10px; /* adjust the spacing as per your design */
+  }
   
   @media screen and (max-width: 600px) {
 	.workGrid {
-	  grid-template-areas: 
-		"workItem1 workItem1"
+	  grid-template-columns: 1fr;
+	  grid-template-areas:
+		"workItem1"
 		"workItem2 workItem2"
+		"workItem3";
 	}
-}
+  }
+  
