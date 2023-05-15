@@ -26,14 +26,24 @@
 	
 	
 	.heroimg {
-	height: 600px;
-	padding: 25px;
-	-ms-text-combine-horizontal: inherit;
+    display: flex;
+	align-items:center;
+	justify-content: flex-start;
+	
+	}
+
+	.text {
+		font-size: 20px;
+		padding-left: 20px;
+		padding-top:20% ;
+		float:right;
 	}
 	
+
 	.content {
-	width: 500px;
-	margin: 0 auto;
+	max-width: 25%;
+	max-height: 15%;
+	float: left;
 	}
 	
 	
@@ -99,6 +109,8 @@
   
   .workGrid {
 	display: grid;
+	row-gap: 50px
+
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
 	grid-template-areas: 
@@ -118,9 +130,7 @@
 	grid-area: workItem3;
   }
   
-  .workItem4 {
-	grid-area: workItem4;
-  }
+  
   
   @media screen and (max-width: 600px) {
 	.workGrid {
