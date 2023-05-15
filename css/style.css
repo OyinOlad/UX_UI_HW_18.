@@ -10,20 +10,30 @@
 	}
 	
 	.nav {
-	width: 73%;
-	padding: 1%;
+		background-color: #f0cee2;
+		list-style-type: none;
+		text-align: center;
+	 width: 73%;
+	 padding: 1%;
 	}
 	
 	nav ul {
 	width: 50%;
 	margin-left: auto;
+	padding: 20px;
+	font-size: 15px;
 	}
+
+
+	
+
+
 	
 	.logo {
 	text-align: center;
 	}
 	
-	
+
 	
 	.heroimg {
     display: flex;
@@ -45,6 +55,8 @@
 	max-height: 15%;
 	float: left;
 	}
+	 
+ 
 	
 	
 	footer {
@@ -137,7 +149,7 @@
   .workItem1, .workItem2, .workItem3 {
 	display:inline-flex;
 	flex-direction:
-	align-items:flex-en
+	align-items:flex-en;
 	text-align: center;
 	padding: 20px;
 	background-color: #f2f2f2;
