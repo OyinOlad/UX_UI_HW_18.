@@ -5,15 +5,19 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, intial-scale=1.0">
      <title>Porfolio site</title><link rel="stylesheet" href="css/style.css"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+     
 </head>
     <body>
       <header class="header">
         <img src="../UX_UI_HW_18./images/Heading.png"  width="201" height="" alt="Logo">
 
         <nav class="navbar">
-          <a href="#home" class="active">Home</a>
-          <a href="#projects" class="active">Projects</a>
+          <a href="#About" class="active">About</a>
+          <a href="#mySkills" class="active">My Skills</a>
+          <a href="#myWork" class="active">Projects</a>
           <a href="#contact" class="active">Contact me</a>
           </nav>
       </header>
@@ -41,7 +45,7 @@
 
          <section class="about" id="about">
            <div class="about-img">
-             <img src="../UX_UI_HW_18./images/Mask group copy.png" alt="Aboutimg">
+             <img src="../UX_UI_HW_18./images/" alt="Aboutimg">
            </div>
            <div class="about content">
           <h2 class="heading">About Me</h2>
@@ -54,6 +58,7 @@
 <!-- My Skills section -->
 <section class="mySkills">
   <h1>My UX Skills</h1>
+
   <div class="flexContainer">
     <div>
       <img src="../UX_UI_HW_18./images/Cursor in Window.png" alt="Skill 1">
@@ -77,41 +82,47 @@
 
 
 <!-- My Work Section -->
-<section class="myWork">
-    <h1>My Work</h1>
-    <div class="workGrid">
-      <div class="workItem1">
-        <img src="project1.png" alt="Project 1"> 
-        <h4>Project 1</h4>
+<section class="myWork" id="mywork">
+    <h1 class="heading">Latest Project</h1> </h1>
+    <div class="portfolio-container">
+      
+      <div class="portfolio-box">
+        <img src="images/mockuuups-jQoW4udKPHFqGYdD4pCZxC.jpeg" alt="Project 1"> 
+        <div class="portfolio-layer">
+          <h4>Invest U</h4>
         <p>Description of Project 1</p>
-        <button>View Project</button>
+        <a href="#" class="btn"> See more</a>
      </div>
-      <div class="workItem2">
-        <img src="project2.png" alt="Project 2"> 
-        <h4>Project 2</h4>
-        <p>Description of Project 1</p>
-        <button>View Project</button>
-      </div>
-      <div class="workItem3">
-        <img src="project3.png" alt="Project 2">
-        <h4>Project 3</h4>
+     </div>
+     
+      <div class="portfolio-box">
+        <img src="images/mockuuups-clean-desk-with-dell-display-mockup.jpeg" alt="Project 1"> 
+        <div class="portfolio-layer">
+          <h4>NCC Redesign</h4>
+        <p>Description of Project 2</p>
+        <a href="#" class="btn"> See more </a>
+     </div>
+     </div>
+
+     
+      <div class="portfolio-box">
+        <img src="images/mockuuups-jQoW4udKPHFqGYdD4pCZxC.jpeg" alt="Project 1"> 
+        <div class="portfolio-layer">
+          <h4>Pandemic app</h4>
         <p>Description of Project 3</p>
-        <button>View Project</button>
-      </div>
+        <a href="#" class="btn"> See more </a>
+     </div>
+     </div>
+    
     </div>
-    <h3>View all projects.</h3>
   </section>
 
-<footer><ul>
-    <li class="inline-block">about</li>
-    <li class="inline-block">skills</li>
-    <li class="inline-block">work</li>
-    <li class="inline-block">contact</li>
-  </ul>
+<footer>
+    <p>Oyinkansola Oladiran @ Copyright 2023 </p>
 </footer>
 
-  
+<script src="https://unpkg.com/scrollreveal"></script>
  <!--custom js-->
- <script src="js/script.js"></script>
+ <script src="script.js"></script>
     </body>
 </html>
